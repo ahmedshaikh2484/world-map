@@ -1,0 +1,217 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: #0b0b0b;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Urbanist", sans-serif;
+  color: #ffffff;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0b0b0b;
+  color: #ffffff;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 0.9rem 1.6rem;
+  border-radius: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #222222;
+}
+
+.country-wrapper {
+  min-height: 100vh;
+  padding: 2rem 1rem 4rem;
+  background-color: #0b0b0b;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.input-section input,
+.input-section select {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #333333;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.input-section input {
+  min-width: 250px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.input-section select {
+  min-width: 180px;
+}
+
+.country-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.country-card {
+  background-color: #111111;
+  border: 1px solid #222222;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.countries-card img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.countryInfo {
+  padding: 1.4rem;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #f7f7f7;
+}
+
+.card-description {
+  display: inline-block;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  color: #aaaaaa;
+}
+
+.countryInfo p {
+  margin: 0.8rem 0;
+  line-height: 1.5;
+  color: #cccccc;
+}
+
+.countryInfo button {
+  width: 100%;
+  margin-top: 1.2rem;
+}
+
+.country-details-container {
+  min-height: 100vh;
+  padding: 3rem 1rem 4rem;
+  background-color: #0b0b0b;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.country-details-box {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #111111;
+  border: 1px solid #222222;
+  border-radius: 1.2rem;
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.country-flag {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(250px, 1fr) 2fr;
+}
+
+.country-flag img.flag {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+}
+
+.country-container h1 {
+  font-size: 3.2rem;
+  margin: 0 0 1rem;
+}
+
+.country-info p {
+  margin: 0.8rem 0;
+  line-height: 1.7;
+  color: #dddddd;
+}
+
+.class-description,
+.country-info .card-description {
+  font-weight: 700;
+  color: #bbbbbb;
+}
+
+.country-back {
+  margin-top: 1rem;
+}
+
+.backBtn {
+  display: inline-block;
+  padding: 1rem 1.6rem;
+  background-color: #171717;
+  border: 1px solid #333333;
+  border-radius: 1rem;
+}
+
+.backBtn:hover {
+  background-color: #222222;
+}
+
+@media (max-width: 900px) {
+  .country-flag {
+    grid-template-columns: 1fr;
+  }
+
+  .input-section {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+}
